@@ -1,24 +1,24 @@
 <?xml version="1.0" encoding="UTF-8" ?>
 <!DOCTYPE struts PUBLIC
-	"-//Apache Software Foundation//DTD Struts Configuration 2.3//EN"
-	"http://struts.apache.org/dtds/struts-2.3.dtd">
+        "-//Apache Software Foundation//DTD Struts Configuration 2.3//EN"
+        "http://struts.apache.org/dtds/struts-2.3.dtd">
 
 <struts>
 
-	<constant name="struts.enable.DynamicMethodInvocation" value="false" />
-	<constant name="struts.devMode" value="true" />
-	<constant name="struts.custom.i18n.resources" value="msg"></constant>
+    <constant name="struts.enable.DynamicMethodInvocation" value="false"/>
+    <constant name="struts.devMode" value="true"/>
+    <constant name="struts.custom.i18n.resources" value="msg"></constant>
 
-	<package name="books" namespace="/book" extends="struts-default">
-		<action name="add_bma" class="com.hxj.action.BookManagementAction"
-			method="addBook">
-			<result name="success">/book/success.jsp</result>
-			<result name="error">/book/error.jsp</result>
-		</action>
-		<action name="*">
-			<result>/WEB-INF/cotents/{1}.jsp</result>
-		</action>
-	</package>
+    <package name="books" namespace="/book" extends="struts-default">
+        <action name="add_bma" class="com.hxj.action.BookManagementAction"
+                method="addBook">
+            <result name="success">/book/success.jsp</result>
+            <result name="error">/book/error.jsp</result>
+        </action>
+        <action name="*">
+            <result>/WEB-INF/cotents/{1}.jsp</result>
+        </action>
+    </package>
 
 
 </struts>

@@ -8,7 +8,7 @@
     <constant name="struts.enable.DynamicMethodInvocation" value="false"/>
     <constant name="struts.devMode" value="true"/>
     <constant name="struts.custom.i18n.resources" value="msg"></constant>
-
+    <constant name="struts.i18n.encoding" value="utf-8"></constant>
     <package name="books" namespace="/book" extends="struts-default">
         <action name="add_bma" class="com.hxj.action.BookManagementAction"
                 method="addBook">

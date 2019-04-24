@@ -3,12 +3,11 @@
 <html>
 <head>
     <meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
-    <title>Insert title here</title>
+    <title>添加书籍</title>
 </head>
 <body>
-<center>
+<div style="text-align: center;margin: 40px auto;width: 80%">
     <h3>添加书籍</h3>
-    <br>
     <form action="book/add_bma" method="post">
         图书名：<input type="text" size="30" name="book.bookName"><br>
         SN编号:<input type="text" size="30" name="book.bookSN"><br>
@@ -16,6 +15,6 @@
         图书价格:<input type="text" name="book.bookPrice"><br>
         <input type="submit" value="添加"><br>
     </form>
-</center>
+</div>
 </body>
 </html>
